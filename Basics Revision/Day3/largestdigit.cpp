@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int digit;
+    int sum=0;
+    for(int i=0;i<=n-1;i++){
+        digit=n%10;
+        if(digit>sum){
+            sum=digit;
+        }
+        n=n/10;
+
+    }
+    cout<<sum;
+}
